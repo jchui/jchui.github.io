@@ -2,8 +2,19 @@ body {
 	font-family: 'Open Sans', sans-serif !important;
 }
 
-.row {
-	max-width: 1200px;
+h1 {
+	font-weight: 500;
+	font-size: 27px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+hr {
+	width: 55px;
+	margin: auto;
+	border: 1px solid black;
+	margin: 20px auto;
 }
 
 section[name="nav"] {
@@ -12,6 +23,10 @@ section[name="nav"] {
 	width: 100%;
 	padding: 20px 0 10px 0;
 	border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+
+section[name="nav"] .row {
+	max-width: 1200px;
 }
 
 section[name="nav"] ul {
@@ -48,6 +63,10 @@ section[name="header"] {
 	padding-top: 200px;
 	
 	overflow: hidden;
+}
+
+section[name="header"] .row {
+	max-width: 1200px;
 }
 
 section[name="header"] h1 {
@@ -123,22 +142,7 @@ section[name="about"] {
 }
 
 section[name="about"] .row {
-	max-width: 800px;
 	text-align: center;
-}
-
-section[name="about"] h1 {
-	font-weight: 500;
-	font-size: 27px;
-	letter-spacing: 4px;
-	text-transform: uppercase;
-}
-
-section[name="about"] hr {
-	width: 55px;
-	margin: auto;
-	border: 1px solid black;
-	margin: 20px auto;
 }
 
 section[name="about"] p {
@@ -219,4 +223,53 @@ section[name="about2"] .content .title {
 	padding-bottom: 15px;
 	font-weight: 500;
 	color: #ffffff;
+}
+
+section[name="schedule"] {
+	padding: 50px 0;
+}
+
+section[name="schedule"] .row {
+	max-width: 100%;
+}
+
+section[name="schedule"] .columns {
+	margin: 0;
+	padding: 0;
+}
+
+section[name="schedule"] .tabs {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+section[name="schedule"] .tabs .tab-title {
+	width: 33.33%;
+	font-size: 13px;
+}
+
+section[name="schedule"] .tabs .tab-title a {
+	padding: 3px 0;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	background-color: #212739;
+	color: #ffffff;
+}
+
+section[name="schedule"] .tabs .tab-title.active a {
+	background-color: #256a97;
+	border: 0;
+	outline: 0;
+}
+
+section[name="schedule"] .tabs-content {
+	padding: 30px 50px;
+}
+
+section[name="schedule"] h3 {
+	text-align: center;
+	font-weight: 400;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
 }
