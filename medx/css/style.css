@@ -17,12 +17,29 @@ hr {
 	margin: 20px auto;
 }
 
+h2 {
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h3 {
+	font-weight: 300;
+	font-size: 14px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
 section[name="nav"] {
 	position: fixed;
 	top: 0;
 	width: 100%;
 	padding: 20px 0 10px 0;
 	border-bottom: 1px solid rgba(255,255,255,0.6);
+	z-index: 100;
 }
 
 section[name="nav"] .row {
@@ -175,7 +192,7 @@ section[name="about2"] .lefta, section[name="about2"] .righta {
 
 section[name="about2"] .cover {
 	opacity: 0;
-	background-color: #8ecef6;
+	background-color: #256a97;
 	height: 100%;
 	text-align: center;
 	padding-top: 140px;
@@ -209,7 +226,7 @@ section[name="about2"] .content p {
 	padding: 0;
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
-	color: #8ecef6;
+	color: #388bc1;
 }
 
 section[name="about2"] .content .number {
@@ -272,4 +289,64 @@ section[name="schedule"] h3 {
 	font-weight: 400;
 	font-size: 20px;
 	font-family: 'Raleway', sans-serif;
+	color: #256a97;
+}
+
+section[name="organisers"] {
+	background-color: #212739;
+	padding: 50px 0;
+}
+
+section[name="organisers"] h1 {
+	color: #ffffff;
+}
+
+section[name="organisers"] hr {
+	border: 1px solid #ffffff;
+}
+
+section[name="organisers"] p {
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+	font-weight: 300;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+section[name="organisers"] img {
+	margin-top: 30px;
+	border-radius: 3px;
+	height: 180px;
+	width: 180px;
+}
+
+section[name="organisers"] p.name {
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+section[name="organisers"] p.position {
+	font-weight: 300;
+	font-size: 12px;
+	max-width: 220px;
+	opacity: 0.8;
+}
+
+section[name="organisers"] h3, section[name="organisers"] h2 {
+	color: #ffffff;
+}
+
+section[name="organisers"] h3 {
+	margin-top: 50px;
+}
+
+section[name="organisers"] h2 {
+	margin-bottom: 30px;
+}
+
+section[name="organisers"] .elearning p {
+	padding: 15px 0 15px 0;
+	font-weight: 100;
+	opacity: 0.8;
 }

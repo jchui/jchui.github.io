@@ -14,12 +14,15 @@
     <script src="js/vendor/modernizr.js"></script>
     
     <script>
-    	
+    	var $nav = $('#nav');
+		$(document).scroll(function() {
+		    $nav.css({backgroundColor: $(this).scrollTop()>1 ? "black":"blue"});
+		});
     </script>
   </head>
   <body>
   
-  	<section name="nav" id="#logo-scroll">
+  	<section name="nav" id="nav">
   		<div class="row">
   			<div class="large-2 columns">
   				<img src="img/logo-w.png" alt="logo-w">
@@ -107,14 +110,82 @@
 				<div class="tabs-content">
 					<section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
 						<h3>September 4, 2015</h3>
+						
 					</section>
 					<section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
-					<h2>Second panel content goes here...</h2>
+						<h3>September 5, 2015</h3>
 					</section>
 					<section role="tabpanel" aria-hidden="true" class="content" id="panel2-3">
-					<h2>Third panel content goes here...</h2>
+						<h3>September 6, 2015</h3>
 					</section>
 				</div>
+    		</div>
+    	</div>
+    </section>
+    
+    <section name="organisers">
+    	<div class="row">
+    		<div class="large-12 columns">
+    			<h1>Organisers</h1>
+    			<hr/>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    			
+    			<div class="row">
+    				<div class="large-4 columns">
+    					<center>
+    					<img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAOWAAAAJDM4ZGQwNDY3LTc4ODItNDg3Ni05YWMyLTY5NzEwNThmNDhlOA.jpg"/>
+    					<p class="name">Jeremy Chui</p>
+    					<p class="position">Lead Organiser, Google Ambassador & Medical Student at The University of Sheffield</p>
+    					</center>
+    				</div>
+    				<div class="large-4 columns">
+    					<center>
+    					<img src="https://media.licdn.com/mpr/mpr/shrink_200_200/p/1/000/089/1d7/3ee4371.jpg"/>
+    					<p class="name">Rakesh Patel</p>
+    					<p class="position">AMEE Lead & NIHR Academic Clinical Lecturer in Medical Education at The University of Leicester</p>
+    					</center>
+    				</div>
+<div class="large-4 columns">
+    					<center>
+    					<img src="https://media.licdn.com/media/p/2/000/083/252/3af3a72.jpg"/>
+    					<p class="name">Natalie Lafferty</p>
+    					<p class="position">Assistant Director LLC and Head of Centre for Technology & Innovation in Learning at The University of Dundee</p>
+    					</center>
+    				</div>
+    			</div>
+    			
+    			<h3>On behalf of the</h3>
+    			<h2>AMEE E-Learning Committee</h2>
+    			
+    			<div class="row elearning">
+    				<div class="large-3 columns">
+    					<p>Kati Hakkarainen</p>
+    				</div>
+    				<div class="large-3 columns">
+    					<p>John Sandars</p>
+    				</div>
+    				<div class="large-3 columns">
+    					<p>David Cook</p>
+    				</div>
+    				<div class="large-3 columns">
+    					<p>Peter de Jong</p>
+    				</div>
+    			</div>
+    			<div class="row elearning">
+    				<div class="large-3 columns">
+    					<p>Rachel Ellaway</p>
+    				</div>
+    				<div class="large-3 columns">
+    					<p>Moira Maley</p>
+    				</div>
+    				<div class="large-3 columns">
+    					<p>Ken Masters</p>
+    				</div>
+    				<div class="large-3 columns">
+    					<p>Goh Poh Sun</p>
+    				</div>
+    			</div>	
+    			
     		</div>
     	</div>
     </section>
