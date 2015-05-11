@@ -11,7 +11,7 @@ section[name="nav"] {
 	top: 0;
 	width: 100%;
 	padding: 20px 0 10px 0;
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 1px solid rgba(255,255,255,0.6);
 }
 
 section[name="nav"] ul {
@@ -27,9 +27,13 @@ section[name="nav"] li {
 	font-size: 14px;
 	letter-spacing: 1px;
 	font-weight: 100px;
-	padding: 0 10px;
+	padding: 0 15px;
 	position: relative;
 	top: 5px;
+}
+
+section[name="nav"] li a {
+	color: #ffffff;
 }
 
 section[name="nav"] img {
@@ -41,7 +45,9 @@ section[name="header"] {
 	background-size: cover;
 	background-color: black;
 	height: 100%;
-	padding-top: 130px;
+	padding-top: 200px;
+	
+	overflow: hidden;
 }
 
 section[name="header"] h1 {
@@ -75,4 +81,142 @@ section[name="header"] h3 {
 	color: #ffffff;
 	font-weight: 100;
 	padding: 0;
+}
+
+section[name="header"] h4 {
+	font-family: 'Raleway';
+	font-size: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 100;
+	padding: 30px 0;
+}
+
+section[name="header"] hr {
+	width: 55px;
+	margin: auto;
+	border: 1px solid #ffffff;
+	margin-top: 20px;
+}
+
+section[name="header"] a.button {
+	padding: 20px 60px;
+	background-color: #e67e22;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin-top: 0px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+section[name="header"] a.button:hover {
+	transition: 0.7s;
+	background-color: #ecf0f1;
+	color: black;
+}
+
+section[name="about"] {
+	background-color: #ffffff;
+	padding: 50px 0;
+}
+
+section[name="about"] .row {
+	max-width: 800px;
+	text-align: center;
+}
+
+section[name="about"] h1 {
+	font-weight: 500;
+	font-size: 27px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+section[name="about"] hr {
+	width: 55px;
+	margin: auto;
+	border: 1px solid black;
+	margin: 20px auto;
+}
+
+section[name="about"] p {
+	font-weight: 100;
+	font-family: 'Raleway', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+section[name="about2"] {
+	max-width: 100% !important;
+	padding: 0;
+	margin: 0;
+}
+
+section[name="about2"] .row {
+	max-width: 100%;
+}
+
+section[name="about2"] .row, section[name="about2"] .columns {
+	padding: 0;
+	margin: 0;
+}
+
+section[name="about2"] .lefta, section[name="about2"] .righta {
+	background-color: #b4b4b4;
+	display: block;
+	height: 310px;
+}
+
+section[name="about2"] .cover {
+	opacity: 0;
+	background-color: #8ecef6;
+	height: 100%;
+	text-align: center;
+	padding-top: 140px;
+	
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+section[name="about2"] .lefta:hover > .cover, section[name="about2"] .righta:hover > .cover {
+	opacity: 100;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+section[name="about2"] .content {
+	background-color: #212739;
+	height: 310px;
+	color: #ffffff;
+}
+
+section[name="about2"] .content .columns {
+	padding: 40px 20px;
+}
+
+section[name="about2"] .content p {
+	font-weight: 300;
+	text-align: center;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	color: #8ecef6;
+}
+
+section[name="about2"] .content .number {
+	font-size: 60px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+section[name="about2"] .content .title {
+	font-size: 15px;
+	padding-bottom: 15px;
+	font-weight: 500;
+	color: #ffffff;
 }
