@@ -10,14 +10,22 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
    
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script> 
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
     <script src="js/vendor/modernizr.js"></script>
     
     <script>
-    	var $nav = $('#nav');
-		$(document).scroll(function() {
-		    $nav.css({backgroundColor: $(this).scrollTop()>1 ? "black":"blue"});
+    	$(document).ready(function() {
+		    $(document).scroll(function(){
+		        t = (100 - $(this).scrollTop())/100;
+		        if (t<0) {
+		        	t=0;
+		        	$('#nav').addClass("scroll")
+		        } else {
+			        $('#nav').removeClass("scroll")
+		        }
+		    })
 		});
+
     </script>
   </head>
   <body>

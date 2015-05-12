@@ -53,7 +53,7 @@ section[name="nav"] {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	padding: 20px 0 10px 0;
+	padding: 15px 0 0px 0;
 	border-bottom: 1px solid rgba(255,255,255,0.6);
 	z-index: 100;
 }
@@ -77,7 +77,7 @@ section[name="nav"] li {
 	font-weight: 100px;
 	padding: 0 15px;
 	position: relative;
-	top: 5px;
+	top: 3px;
 }
 
 section[name="nav"] li a {
@@ -85,7 +85,17 @@ section[name="nav"] li a {
 }
 
 section[name="nav"] img {
-	height: 35px;
+	height: 30px;
+}
+
+.scroll {
+	background-color: #ffffff;
+	border-bottom: 1px solid #d1d1d1 !important;
+	transition: 0.6s;
+}
+
+.scroll li a {
+	color: #212739 !important;
 }
 
 section[name="header"] {
