@@ -45,6 +45,10 @@
 		
 		$(function() {
 		  $('a[href*=#]:not([href=#])').click(function() {
+		  	var addressValue = $(this).attr("href");
+		  	
+		  	if (!(addressValue == '#panel2-1' || addressValue == '#panel2-2' || addressValue == '#panel2-3')) {
+		  
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		      var target = $(this.hash);
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -54,6 +58,8 @@
 		        }, 1000);
 		        return false;
 		      }
+		    }
+		    
 		    }
 		  });
 		});
