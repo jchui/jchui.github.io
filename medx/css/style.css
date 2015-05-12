@@ -350,3 +350,31 @@ section[name="organisers"] .elearning p {
 	font-weight: 100;
 	opacity: 0.8;
 }
+
+section[name="sponsors"] {
+	padding: 50px 0;
+}
+
+section[name="sponsors"] p {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	padding: 0px 0;
+	margin: 0;
+}
+
+section[name="sponsors"] .tier {
+	padding: 30px 0;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+section[name="sponsors"] .headline {
+	color: #528ea6;
+}
+
+section[name="sponsors"] .core {
+	color: #454545;
+	font-size: 14px;
+}
