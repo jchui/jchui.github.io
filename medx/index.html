@@ -26,6 +26,12 @@
 		    })
 		});
 
+		$(function() {
+		  $('select').change(function(){
+		    $("#width_tmp").html($('select option:selected').text());
+		    $(this).width($("#width_tmp").width()+2); 
+		  });
+		});
     </script>
   </head>
   <body>
@@ -34,7 +40,7 @@
   		<div class="row">
   			<div class="large-2 columns">
   				<img src="img/logo-w.png" alt="logo-w">
-  				<p class="power">Powered by <span>AMEE</span></p>
+  				<p class="power">Powered by <span class="amee">AMEE</span></p>
   			</div>
   			<div class="large-10 columns">
   				<ul>
@@ -60,9 +66,9 @@
     		<div class="large-12 columns">
     			<h2>The World's First</h2>
     			<h1>Medical Education Hackathon</h1>
-    			<h3>Powered by <span>AMEE</span></h3>
+    			<h3>Powered by <span class="amee">AMEE</span></h3>
     			<hr/>
-    			<h4>4th - 9th September, Glasgow.</h4>
+    			<h4>4th - 6th September, Glasgow.</h4>
     			<center>
     				<p><a href="" class="button">Apply Now</a></p>
     			</center>
@@ -284,6 +290,44 @@
     					</center>
     				</div>
     			</div>
+    		</div>
+    	</div>
+    </section>
+    
+    <section name="map">
+    	<div class="row">
+    		<div class="large-3 columns">
+    			<div class="box">
+    				<p class="location">Scottish Exhibition and Conference Centre, Glasgow, UK</p>
+    				<p class="date">4-6 September 2015</p>
+    				<p class="link"><a href="">https://www.amee.org/conferences/amee-2015</a></p>
+    			</div>
+    		</div>
+    	</div>	
+    </section>
+    
+    <section name="apply">
+    	<div class="row">
+    		<div class="large-12 columns">
+    			<p>Hi, I am a 
+    			<select>
+    				<option value="">Developer</option>
+    				<option value="">Designer</option>
+    				<option value="">Idea Generator</option>
+    				<option value="">News Representative</option>
+    			</select> 
+    			<span id="width_tmp"></span>
+    			and I am interested in attending this MEDx event in <span class="amee">AMEE</span> Glasgow!</p>
+    			
+    			<a class="applybtn">Apply Now</a>
+    		</div>
+    	</div>	
+    </section>
+    
+    <section name="footer">
+    	<div class="row">
+    		<div class="large-12 columns">
+    			<p>Copyright &copy; 2015 MEDx. All Rights Reserved. Powered by <span class="amee">AMEE</span>.</p>
     		</div>
     	</div>
     </section>

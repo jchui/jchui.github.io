@@ -33,6 +33,12 @@ h3 {
 	text-align: center;
 }
 
+span.amee {
+	color: #ffffff;
+	background-color: #104d72;
+	padding: 0 5px;
+}
+
 .video-wrap {
 	background-color: #000000;
 	opacity: 0.7;
@@ -96,12 +102,6 @@ section[name="nav"] .power {
 	font-weight: 100;
 	font-size: 12px;
 	
-}
-
-section[name="nav"] .power span {
-	color: #ffffff;
-	background-color: #104d72;
-	padding: 0 5px;
 }
 
 section[name="nav"].scroll {
@@ -172,11 +172,6 @@ section[name="header"] h4 {
 	color: #ffffff;
 	font-weight: 100;
 	padding: 30px 0;
-}
-
-section[name="header"] span {
-	background-color: #104d72;
-	padding: 0 5px;
 }
 
 section[name="header"] hr {
@@ -474,4 +469,104 @@ section[name="mentors"] p.position {
 section[name="mentors"] h3 {
 	color: #ffffff;
 	margin-top: 40px;
+}
+
+section[name="map"] {
+	height: 350px;
+	background-image: url("http://www.footiemap.com/country/scotland/maps/glasgow.jpg");
+	background-size: cover;
+	background-position-y: -250px;
+}
+
+section[name="map"] .box {
+	background-color: rgba(255,255,255,0.9);
+	padding: 20px 30px;
+	margin-top: 50px;
+	height: 250px;
+	width: 350px;
+}
+
+section[name="map"] .box p {
+	padding: 0;
+	margin: 0;
+}
+
+section[name="map"] .box .location {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 1.2em;
+}
+
+section[name="map"] .box .date {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+section[name="map"] .box .link {
+	font-size: 14px;
+	padding-top: 15px;
+}
+
+section[name="apply"] {
+	background-image: url("../img/secc.jpg");	
+	background-size: cover;
+	background-position-y: -200px;
+	padding: 50px 0;
+}
+
+section[name="apply"] p {
+	color: #ffffff;
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 30px;
+}
+
+section[name="apply"] select {
+	display: inline-block;
+	width: auto;
+	background: transparent;
+    -webkit-appearance: none;
+    border: none;
+    border-bottom: 2px dashed #ffffff;
+    color: #ffffff;
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+	height: auto;
+	cursor: pointer;
+	width: 160px;
+	outline: none;
+}
+
+section[name="apply"] #width_tmp{
+	display : none;
+}
+
+section[name="apply"] .applybtn {
+	padding: 10px 25px;
+	color: #ffffff;
+	background-color: #e67e22;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+section[name="apply"] .applybtn:hover {
+	background-color: rgba(230,126,35,0.8);
+	transition: 0.5s;
+}
+
+section[name="footer"] {
+	background-color: #ffffff;
+	padding: 7px 0;
+	text-align: center;
+}
+
+section[name="footer"] p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
 }
