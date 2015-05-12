@@ -42,6 +42,21 @@
 		        $(this).toggleClass('selected');
 		    });
 		});
+		
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: (target.offset().top - 60)
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
     </script>
   </head>
   <body>
@@ -54,12 +69,12 @@
   			</div>
   			<div class="large-10 columns">
   				<ul>
-  					<li><a href="">About</a></li>
-  					<li><a href="">Partners</a></li>
-  					<li><a href="">Schedule</a></li>
-  					<li><a href="">Organisers</a></li>
-  					<li><a href="">Mentors</a></li>
-  					<li><a href="">Apply Now</a></li>
+  					<li><a href="#about">About</a></li>
+  					<li><a href="#schedule">Schedule</a></li>
+  					<li><a href="#organisers">Organisers</a></li>
+  					<li><a href="#sponsors">Sponsors</a></li>
+  					<li><a href="#mentors">Mentors</a></li>
+  					<li><a href="#map">Apply Now</a></li>
   				</ul>  			
   			</div>
   		</div>
