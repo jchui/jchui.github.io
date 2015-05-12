@@ -378,3 +378,49 @@ section[name="sponsors"] .core {
 	color: #454545;
 	font-size: 14px;
 }
+
+section[name="mentors"] {
+	background-color: #212739;
+	padding: 50px 0;
+}
+
+section[name="mentors"] h1 {
+	color: #ffffff;
+}
+
+section[name="mentors"] hr {
+	border: 1px solid #ffffff;
+}
+
+section[name="mentors"] p {
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+	font-weight: 300;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+section[name="mentors"] img {
+	margin-top: 30px;
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+}
+
+section[name="mentors"] p.name {
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+section[name="mentors"] p.position {
+	font-weight: 300;
+	font-size: 12px;
+	max-width: 220px;
+	opacity: 0.8;
+}
+
+section[name="mentors"] h3 {
+	color: #ffffff;
+	margin-top: 40px;
+}
