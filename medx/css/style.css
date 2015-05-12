@@ -95,9 +95,10 @@ section[name="nav"] img {
 }
 
 section[name="nav"] .power {
-	position: fixed;
-	top: 30px;
-	left: 170px;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	left: 10px;
 	color: #ffffff;
 	font-weight: 100;
 	font-size: 12px;
