@@ -33,6 +33,22 @@ h3 {
 	text-align: center;
 }
 
+.video-wrap {
+	background-color: #000000;
+	opacity: 0.7;
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: -5;
+}
+
+video#bgvid {
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: -10;
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+}
+
 section[name="nav"] {
 	position: fixed;
 	top: 0;
@@ -73,9 +89,7 @@ section[name="nav"] img {
 }
 
 section[name="header"] {
-	background-image: url("../img/bg.jpg");
-	background-size: cover;
-	background-color: black;
+
 	height: 100%;
 	padding-top: 200px;
 	
@@ -244,6 +258,7 @@ section[name="about2"] .content .title {
 
 section[name="schedule"] {
 	padding: 50px 0;
+	background-color: #ffffff;
 }
 
 section[name="schedule"] .row {
@@ -353,6 +368,7 @@ section[name="organisers"] .elearning p {
 
 section[name="sponsors"] {
 	padding: 50px 0;
+	background-color: #ffffff;
 }
 
 section[name="sponsors"] p {
